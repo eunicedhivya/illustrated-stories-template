@@ -1,12 +1,26 @@
+
+
 window.addEventListener("load", function () {
 
+document.body.style.overflow = 'hidden';
+// fullpage_api.setAllowScrolling(false);
 
+document.getElementById("moveUp").addEventListener("click", function(){
+    fullpage_api.moveSectionUp();
+})
+document.getElementById("moveDown").addEventListener("click", function(){
+    fullpage_api.moveSectionDown();
+})
     var myFullpage = new fullpage('#fullpage', {
         licenseKey: '29D22B9D-244C4C74-87A11080-BE68FCC1',
         anchors: ['0', '1', '2', '3', '4', '5', '6', '7', '8'],
         autoScrolling: false,
         navigation: true,
         navigationPosition: 'right',
+        fitToSection:true,
+        fitToSection: true,
+        fitToSectionDelay: 1,
+        scrollBar: false,
         afterLoad: function (origin, destination, direction) {
             if (origin.item.id === "section0") {
                 var itemsDesktop = destination.item.getElementsByClassName("bg");
