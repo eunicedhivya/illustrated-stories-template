@@ -2,7 +2,7 @@
 
 window.addEventListener("load", function () {
 
-document.body.style.overflow = 'hidden';
+// document.body.style.overflow = 'hidden';
 // fullpage_api.setAllowScrolling(false);
 
 document.getElementById("moveUp").addEventListener("click", function(){
