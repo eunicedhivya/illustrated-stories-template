@@ -75,7 +75,7 @@ document.getElementById("moveDown").addEventListener("click", function(){
                 console.log("down");
                 var items = sectionDestination.getElementsByClassName("fade-item");
                 for (let i = 0; i < items.length; ++i) {
-                    fadeIn(items[i], (i + 1) * 1000)
+                    fadeIn(items[i], (i + 1) * 800)
                 }
 
                 function fadeIn(item, delay) {
