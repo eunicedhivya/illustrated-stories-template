@@ -47,6 +47,11 @@ header img {
 
 .end-card {
   text-align: center;
+  visibility: hidden;
+}
+
+.fp-viewing-9 .end-card {
+  visibility: visible;
 }
 .end-card p {
   margin-bottom: 10px;
