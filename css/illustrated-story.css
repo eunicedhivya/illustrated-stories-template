@@ -28,7 +28,7 @@ header img {
   display: flex;
   justify-content: space-around;
   column-gap: 10px;
-  background-color: #000;
+  background-color: #056fff;
   padding: 5px 10px;
   border-radius: 10px;
 }
@@ -58,7 +58,7 @@ header img {
 }
 
 .sliderNavBar2 {
-  background-color: #000;
+  background-color: #056fff;
   height: fit-content;
   width: 250px;
   margin: 0 auto;
@@ -137,7 +137,7 @@ header img {
   background-color: #000;
   color: #fff;
   padding: 5px 10px;
-  border-radius: 2px;
+  border-radius: 10px;
   font-size: 12px;
 }
 
