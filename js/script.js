@@ -5,9 +5,12 @@ window.addEventListener("scroll", function () {
     }else{
         document.getElementById('header').className = "";
     }
-    
 
 })
+
+window.onbeforeunload = function () {
+  window.scrollTo(0, 0);
+}
 
 window.addEventListener("load", function () {
 
