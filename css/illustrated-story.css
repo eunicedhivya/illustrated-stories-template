@@ -40,6 +40,13 @@ header img {
   display: none;
 }
 
+.end-card {
+  text-align: center;
+}
+.end-card p {
+  margin-bottom: 10px;
+}
+
 .sliderNavBar2 {
   background-color: #000;
   height: fit-content;
@@ -72,10 +79,10 @@ header img {
   width: 25px;
   height: 25px;
 }
-.sliderNavBar.NavBottom .navcenter {
+.sliderNavBar2 .navcenter {
   width: 30px;
   height: 30px;
-  margin-top: 10px;
+  /* margin-top: 10px; */
 }
 .sliderNavBar.NavBottom .nextChapter,
 .sliderNavBar.NavBottom .prevChapter {
