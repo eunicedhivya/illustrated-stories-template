@@ -13,9 +13,8 @@ document.getElementById("moveDown").addEventListener("click", function(){
 })
     var myFullpage = new fullpage('#fullpage', {
         licenseKey: '29D22B9D-244C4C74-87A11080-BE68FCC1',
-        anchors: ['0', '1', '2', '3', '4', '5', '6', '7', '8'],
         autoScrolling: false,
-        navigation: true,
+        navigation: false,
         navigationPosition: 'right',
         fitToSection:true,
         fitToSection: true,
