@@ -76,9 +76,19 @@ header img {
 .fp-viewing-0 #moveUp {
   visibility: hidden;
 }
-/* #moveUp {
-  text-align: center;
+
+.sliderNavBar2 a:hover {
+  opacity: 0.5;
 }
+
+#moveUp:hover {
+  opacity: 0.5;
+}
+
+#moveDown:hover {
+  opacity: 0.5;
+}
+/* 
 
 #moveUp::before {
   content: "previous slide";
