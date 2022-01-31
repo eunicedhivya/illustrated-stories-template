@@ -1,4 +1,13 @@
+window.addEventListener("scroll", function () {
+    // console.log("scrolling")
+    if(this.window.scrollY > 100){
+        document.getElementById('header').className = "sticky";
+    }else{
+        document.getElementById('header').className = "";
+    }
+    
 
+})
 
 window.addEventListener("load", function () {
 
@@ -94,4 +103,7 @@ document.getElementById("moveDown").addEventListener("click", function(){
 
         },
     });
+
+    //methods
+    fullpage_api.setAllowScrolling(false);
 })

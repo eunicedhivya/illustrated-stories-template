@@ -1,4 +1,11 @@
+body::-webkit-scrollbar {
+  display: none;
+}
+
 header {
+  width: 100%;
+}
+header.sticky {
   width: 100%;
   position: fixed;
   top: 0;
@@ -7,7 +14,6 @@ header {
 header img {
   width: 100%;
 }
-
 .sliderNavBar {
   position: fixed;
   z-index: 100;
@@ -163,8 +169,20 @@ header img {
 }
 
 @media (max-width: 768px) {
+  .sticky-mob {
+    display: block;
+  }
+  .sticky-desk {
+    display: none;
+  }
 }
 @media (min-width: 1024px) {
+  .sticky-mob {
+    display: none;
+  }
+  .sticky-desk {
+    display: block;
+  }
   .details-header {
     font-size: 12px;
     font-weight: bold;
