@@ -12,17 +12,32 @@ window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
 
+document.getElementById("gototop").addEventListener("click", function(){
+    window.scrollTo(0, 0);
+    var cards = document.getElementsByClassName("card");
+    for(let r = 0; r < cards.length; r++){
+        var getAllFadeItems = cards[r].getElementsByClassName("fade-item")
+        for(let t=0; t<getAllFadeItems.length; t++){
+            fadeOut(getAllFadeItems[t], 1)
+        }
+    }
+    function fadeOut(item, delay) {
+                    item.classList.remove('fadein')
+    }
+                
+})
+
 window.addEventListener("load", function () {
 
 // document.body.style.overflow = 'hidden';
 // fullpage_api.setAllowScrolling(false);
 
-document.getElementById("moveUp").addEventListener("click", function(){
-    fullpage_api.moveSectionUp();
-})
-document.getElementById("moveDown").addEventListener("click", function(){
-    fullpage_api.moveSectionDown();
-})
+    document.getElementById("moveUp").addEventListener("click", function(){
+        fullpage_api.moveSectionUp();
+    })
+    document.getElementById("moveDown").addEventListener("click", function(){
+        fullpage_api.moveSectionDown();
+    })
     var myFullpage = new fullpage('#fullpage', {
         licenseKey: '29D22B9D-244C4C74-87A11080-BE68FCC1',
         autoScrolling: false,
