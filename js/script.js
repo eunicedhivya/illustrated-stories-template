@@ -69,8 +69,6 @@ document.getElementById("moveDown").addEventListener("click", function(){
         },
         onLeave: function (origin, destination, direction) {
             console.log(origin.item.id);
-
-
             var sectionDestination = destination.item
             var sectionOrigin = origin.item
             if (direction === 'down') {

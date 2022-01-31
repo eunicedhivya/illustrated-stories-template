@@ -4,12 +4,12 @@ body::-webkit-scrollbar {
 
 header {
   width: 100%;
+  z-index: 1000;
 }
 header.sticky {
   width: 100%;
   position: fixed;
   top: 0;
-  z-index: 1000;
 }
 header img {
   width: 100%;
@@ -53,6 +53,12 @@ header img {
 .fp-viewing-8 .sliderNavBar.NavBottom {
   display: flex;
 }
+.fp-viewing-0 #moveUp {
+  visibility: hidden;
+}
+.fp-viewing-8 #moveDown {
+  visibility: hidden;
+}
 
 .sliderNavBar img {
   width: 25px;
@@ -61,7 +67,7 @@ header img {
 
 .details-header {
   position: fixed;
-  top: 0;
+  top: 75px;
   z-index: 200;
   display: flex;
   justify-content: space-between;
