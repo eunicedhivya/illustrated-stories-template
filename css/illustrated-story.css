@@ -148,7 +148,7 @@ header img {
   position: fixed;
   top: 75px;
   z-index: 200;
-  display: flex;
+  display: none;
   justify-content: space-between;
   width: 100%;
   padding: 20px;
@@ -160,6 +160,10 @@ header img {
   border-radius: 10px;
   font-size: 12px;
   font-family: "Georama", sans-serif;
+}
+
+.fp-viewing-0 .details-header {
+  display: flex;
 }
 
 .card {
