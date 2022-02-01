@@ -1,13 +1,3 @@
-window.addEventListener("scroll", function () {
-    // console.log("scrolling")
-    if(this.window.scrollY > 100){
-        document.getElementById('header').className = "sticky";
-    }else{
-        document.getElementById('header').className = "";
-    }
-
-})
-
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
 }
@@ -122,4 +112,6 @@ window.addEventListener("load", function () {
 
     //methods
     fullpage_api.setAllowScrolling(false);
+    // e.preventDefault();
+    // e.stopPropagation();
 })
