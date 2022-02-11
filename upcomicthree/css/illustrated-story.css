@@ -331,6 +331,11 @@ header img {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  .details-header {
+    max-width: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 @media (min-width: 1600px) {
   .sticky-mob,
