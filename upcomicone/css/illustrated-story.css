@@ -19,7 +19,7 @@ body::-webkit-scrollbar {
 
 .intro-card {
   text-align: center;
-  padding: 20px 50px;
+  padding: 20px 85px;
   width: 100%;
   max-width: 600px;
 }
@@ -135,8 +135,8 @@ header img {
 }
 
 .sliderNavBar.NavLeft img {
-  width: 35px;
-  height: 35px;
+  width: 40px;
+  height: 40px;
 }
 .sliderNavBar2 .navcenter {
   width: 30px;
