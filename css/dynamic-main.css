@@ -1,0 +1,128 @@
+/* .dynamic_page-intro,  .dynamic_grid{
+    margin: 0 20px;
+} */
+.inBetweenAds {
+  width: 100%;
+}
+.dynamic_page-intro p {
+  width: 100%;
+  max-width: 750px;
+  margin: 20px auto 50px auto;
+  text-align: center;
+}
+.dynamic_page-intro h1 {
+  width: 100%;
+  max-width: 650px;
+  margin: 20px auto 50px auto;
+  text-align: center;
+}
+.dynamic_page-intro h1 {
+  font-size: 40px;
+  line-height: 44px;
+  margin-bottom: 20px;
+  font-family: "Georama", sans-serif;
+}
+.dynamic_page-intro p {
+  font-size: 16px;
+}
+.dynamic_grid {
+  display: flex;
+  column-gap: 35px;
+  row-gap: 50px;
+  flex-wrap: wrap;
+  font-family: "Georama", sans-serif;
+  margin-bottom: 50px;
+}
+.dynamic_story {
+  width: 100%;
+  box-sizing: border-box;
+}
+.dynamic_story .catName {
+  background-color: #056eff;
+  letter-spacing: 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 12px;
+  padding: 10px 15px;
+  display: inline-block;
+}
+.dynamic_story .dynamic_author-details {
+  display: flex;
+  align-items: center;
+}
+.dynamic_story .dynamic_featured-img {
+  margin-bottom: 15px;
+}
+.dynamic_story .dynamic_author-img {
+  width: 35%;
+  margin-right: 15px;
+  border: 2px solid #ccc;
+}
+.dynamic_story .dynamic_author-details img {
+  border-radius: 50%;
+}
+.dynamic_story .dynamic_author-text p {
+  color: #f6901e;
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Georama", sans-serif;
+}
+.dynamic_story .dynamic_author-text h2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  font-family: "Georama", sans-serif;
+}
+
+@media (max-width: 767px) {
+  /* .dynamic_story {
+        width: 100%;
+        box-sizing: border-box;
+    }
+    .dynamic_grid{
+        row-gap: 50px;
+    } */
+  .dynamic_story .dynamic_author-img {
+    width: 30%;
+  }
+}
+@media (min-width: 768px) {
+  .dynamic_story {
+    width: 47.9%;
+    box-sizing: border-box;
+  }
+  /* .dynamic_grid{
+        column-gap: 30px;
+    } */
+}
+@media (min-width: 1024px) {
+  .dynamic_story {
+    width: 31%;
+    box-sizing: border-box;
+  }
+
+  .dynamic_story .dynamic_author-details {
+    align-items: flex-start;
+    /* column-gap: 20px; */
+  }
+
+  .dynamic_story .dynamic_author-text p {
+    font-size: 13px;
+    margin-bottom: 5px;
+  }
+  .dynamic_story .dynamic_author-text h2 {
+    font-size: 19px;
+    line-height: 22px;
+  }
+
+  .dynamic_story .catName {
+    letter-spacing: 8px;
+    font-size: 10px;
+    margin-bottom: 12px;
+    padding: 8px 7px 8px 12px;
+  }
+}
