@@ -38,13 +38,25 @@ window.addEventListener("load", function () {
         fitToSectionDelay: 1,
         scrollBar: false,
         afterLoad: function (origin, destination, direction) {
-         } ,
+        } ,
         onLeave: function (origin, destination, direction) {
             
             var sectionDestination = destination.item
             var sectionOrigin = origin.item
             if (direction === 'down') {
-                console.log("down");
+                if(sectionDestination.id === "section1"){
+                    var intro_desk = sectionDestination.getElementsByClassName("intro-desktop");
+                    var intro_desk_items = intro_desk[0].getElementsByClassName("fade-item");
+                    var intro_mob = sectionDestination.getElementsByClassName("intro-mobile");
+                    var intro_mob_items = intro_mob[0].getElementsByClassName("fade-item");
+                    for (let j = 0; j < intro_desk_items.length; ++j) {
+                        fadeIn(intro_desk_items[j], (j + 1) * 800)
+                    }
+                    for (let k = 0; k < intro_mob_items.length; ++k) {
+                        fadeIn(intro_mob_items[k], (k + 1) * 800)
+                    }
+                }
+                // console.log("down", sectionDestination.id);
                 var items = sectionDestination.getElementsByClassName("fade-item");
                 for (let i = 0; i < items.length; ++i) {
                     fadeIn(items[i], (i + 1) * 800)
